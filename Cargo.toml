@@ -1,0 +1,58 @@
+[package]
+name         = "skillx"
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.98"
+license      = "MIT OR Apache-2.0"
+description  = "Hierarchical multi-agent orchestrator that turns requirements into production-grade code"
+categories   = ["development-tools", "command-line-utilities"]
+keywords     = ["agents", "ai", "llm", "cli"]
+authors      = ["comstrx <comstrx@gmail.com>"]
+repository   = "https://github.com/comstrx/skillx"
+homepage     = "https://github.com/comstrx/skillx"
+readme       = "README.md"
+
+[[bin]]
+name = "skillx"
+path = "src/main.rs"
+
+[dependencies]
+nix           = { version = "0.31.3", features = ["process", "signal", "term"] }
+serde         = { version = "1.0.228", features = ["derive"] }
+tokio         = { version = "1.52.3", features = ["rt-multi-thread", "time", "macros"] }
+uuid          = { version = "1.23.3", features = ["v4"] }
+reqwest       = { version = "0.13.4", default-features = false, features = ["rustls", "http2"] }
+clap          = { version = "4.6.1", features = ["derive"] }
+clap_complete = "4.6.1"
+clap_mangen   = "0.3.0"
+include_dir   = "0.7.4"
+thiserror     = "2.0.18"
+serde_json    = "1.0.150"
+serde_yaml_ng = "0.10.0"
+parking_lot   = "0.12.5"
+owo-colors    = "4.3.0"
+jiff          = "0.2.28"
+toml          = "1.1.2"
+memchr        = "2.7.6"
+
+[dev-dependencies]
+criterion = "0.8.1"
+
+[profile.release]
+opt-level        = 3
+codegen-units    = 1
+debug            = 0
+lto              = "fat"
+panic            = "abort"
+strip            = "symbols"
+debug-assertions = false
+overflow-checks  = false
+incremental      = false
+
+[profile.release.build-override]
+opt-level     = 0
+codegen-units = 256
+
+[profile.dist]
+inherits = "release"
+lto = "thin"
