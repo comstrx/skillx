@@ -1,7 +1,7 @@
 # ✨ SkillX
 
 <div align="center">
-      <img height="350" src="https://github.com/user-attachments/assets/c133029e-dabb-4919-b8a4-f96aa6f2e5d5" />
+    <img height="350" src="https://github.com/user-attachments/assets/c133029e-dabb-4919-b8a4-f96aa6f2e5d5" />
 </div>
 
 [![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
@@ -150,7 +150,7 @@ A complete product is expected to live in a single repository:
 
 ```text
 product/
-├── specs/
+├── spec/
 ├── server/
 ├── panel/
 ├── web/
@@ -158,7 +158,7 @@ product/
 └── infra/
 ```
 
-`specs/` contains the product-specific knowledge:
+`spec/` contains the product-specific knowledge:
 
 * business rules
 * workflows
@@ -207,7 +207,7 @@ CLI / MCP
     ↓
 SkillX
     ↓
-Foundation + Stack + Workflow + Project Specs
+Foundation + Stack + Workflow + Project Spec
 ```
 
 The AI model remains replaceable.
@@ -348,7 +348,7 @@ expose MCP
 
 Engineering intelligence belongs in `seed/`.
 
-Product intelligence belongs in project `specs/`.
+Product intelligence belongs in project `spec/`.
 
 The runtime only connects them.
 
@@ -378,19 +378,18 @@ The objective is to produce better software with less repeated human engineering
 
 ## Community
 
-* [Issues](https://github.com/comstrx/skillx/issues)
-* [Discussions](https://github.com/comstrx/skillx/discussions)
-* [Contributing](https://github.com/comstrx/skillx/blob/main/CONTRIBUTING.md)
-* [Security](https://github.com/comstrx/skillx/blob/main/SECURITY.md)
-* [Support](https://github.com/comstrx/skillx/blob/main/SUPPORT.md)
+- [Issues](https://github.com/comstrx/skillx/issues)
+- [Discussions](https://github.com/comstrx/skillx/discussions)
+- [Contributing](https://github.com/comstrx/skillx/blob/main/CONTRIBUTING.md)
+- [Security](https://github.com/comstrx/skillx/blob/main/SECURITY.md)
+- [Support](https://github.com/comstrx/skillx/blob/main/SUPPORT.md)
 
 ## License
 
-`skillx` is dual-licensed under either:
+<code>skillx</code> is dual-licensed under either
+[MIT](https://github.com/comstrx/skillx/blob/main/LICENSE-MIT) or
+[Apache-2.0](https://github.com/comstrx/skillx/blob/main/LICENSE-APACHE), at your option.
 
-* [MIT](https://github.com/comstrx/skillx/blob/main/LICENSE-MIT)
-* [Apache-2.0](https://github.com/comstrx/skillx/blob/main/LICENSE-APACHE)
-
-at your option.
-
-Unless explicitly stated otherwise, contributions intentionally submitted for inclusion in this project, as defined by the Apache-2.0 license, are dual-licensed under the same terms.
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in this work by you, as defined in the Apache-2.0 license, shall be
+dual-licensed as above, without any additional terms or conditions.
