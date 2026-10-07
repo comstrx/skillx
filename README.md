@@ -4,7 +4,7 @@
     <img height="350" src="https://github.com/user-attachments/assets/c133029e-dabb-4919-b8a4-f96aa6f2e5d5" />
 </div>
 
-[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](#license)
 [![CI](https://github.com/comstrx/skillx/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/comstrx/skillx/actions/workflows/ci.yaml)
 [![Release](https://img.shields.io/github/v/release/comstrx/skillx?sort=semver)](https://github.com/comstrx/skillx/releases/latest)
 
@@ -386,10 +386,6 @@ The objective is to produce better software with less repeated human engineering
 
 ## License
 
-<code>skillx</code> is dual-licensed under either
-[MIT](https://github.com/comstrx/skillx/blob/main/LICENSE-MIT) or
-[Apache-2.0](https://github.com/comstrx/skillx/blob/main/LICENSE-APACHE), at your option.
+Copyright © 2026 Abdulrahman Yasser (comstrx).
 
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in this work by you, as defined in the Apache-2.0 license, shall be
-dual-licensed as above, without any additional terms or conditions.
+Licensed under the [Apache License, Version 2.0](./LICENSE).
