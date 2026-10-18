@@ -2,6 +2,10 @@
 
 Every release of SkillX.
 
+## v0.1.3 — 2026-10-18
+
+- The README's Download block: `skill-installer.sh` / `.ps1` install the latest `skill`, or clone and run `cargo run --release -- hello`.
+
 ## v0.1.2 — 2026-10-18
 
 - `skill hello`: the same lifecycle, the same promise.
